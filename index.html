@@ -12,33 +12,9 @@
 <meta property="og:url" content="https://bleecker.moonlab.productions/">
 <meta name="twitter:card" content="summary_large_image">
 <style>html{-webkit-text-size-adjust:100%}body{margin:0}img{max-width:100%}[hidden]{display:none!important}:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}</style>
-<style id="gate-css">
-html.locked body>*:not(#gate){display:none!important}
-#gate{display:none}
-html.locked #gate{display:flex;position:fixed;inset:0;background:#100e0c;color:#efe7d6;align-items:center;justify-content:center;padding:24px max(16px,env(safe-area-inset-left,0px));font-family:"Source Sans 3",system-ui,-apple-system,sans-serif}
-#gate form{width:100%;max-width:380px;display:flex;flex-direction:column;gap:14px;text-align:center}
-#gate img{width:100%;height:auto}
-#gate label{font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:#b9ae9b}
-#gate input{font:inherit;font-size:18px;min-height:52px;padding:0 14px;border-radius:8px;border:1px solid #3a332c;background:#1a1714;color:#efe7d6;text-align:center}
-#gate button{font:inherit;font-weight:600;font-size:17px;min-height:52px;border-radius:8px;border:0;background:#d2ad4c;color:#100e0c;cursor:pointer}
-#gate .err{min-height:20px;color:#e08a6a;font-size:14px}
-</style>
-<script>document.documentElement.classList.add('locked');try{if(localStorage.getItem('bgk')==='64d33f7a78f00f0067d01c36d92df9e2979a71a438e08def123edd0a1e3cc5f9')document.documentElement.classList.remove('locked')}catch(e){}</script>
 </head>
 <body>
-<div id="gate"><form id="gform" autocomplete="off">
-<img src="title.png" alt="The Gods and Ghosts of Bleecker Street">
-<label for="gpw">Enter password</label>
-<input id="gpw" type="password" autocapitalize="none" autocorrect="off" spellcheck="false" required>
-<button type="submit">Open</button>
-<p class="err" id="gerr" aria-live="polite"></p>
-</form></div>
-<script>
-(function(){var H='64d33f7a78f00f0067d01c36d92df9e2979a71a438e08def123edd0a1e3cc5f9';
-async function h(s){var b=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(s));return Array.from(new Uint8Array(b)).map(function(x){return x.toString(16).padStart(2,'0')}).join('')}
-document.getElementById('gform').addEventListener('submit',async function(e){e.preventDefault();var v=document.getElementById('gpw').value.trim().toLowerCase();
-if(await h(v)===H){try{localStorage.setItem('bgk',H)}catch(_){}document.documentElement.classList.remove('locked');window.scrollTo(0,0)}else{document.getElementById('gerr').textContent="That password didn't work. Check the spelling and try again."}});})();
-</script>
+
 
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
