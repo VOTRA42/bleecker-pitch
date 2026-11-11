@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>The Gods and Ghosts of Bleecker Street</title>
+<meta name="description" content="An original musical motion picture. MoonLab Productions. Producer and Musical Director Marc Jackson.">
+<meta property="og:title" content="The Gods and Ghosts of Bleecker Street">
+<meta property="og:description" content="An original musical motion picture. Teaser, story, music and budget scenarios.">
+<meta property="og:image" content="https://bleecker.moonlab.productions/hero.jpg">
+<meta property="og:url" content="https://bleecker.moonlab.productions/">
+<meta name="twitter:card" content="summary_large_image">
+<style>html{-webkit-text-size-adjust:100%}body{margin:0}img{max-width:100%}[hidden]{display:none!important}:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}</style>
+</head>
+<body>
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,500;0,6..96,700;1,6..96,400&family=Source+Sans+3:wght@400;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a single cinematic column, title art over the street number, then the pitch read top to bottom like a one-sheet that keeps going. Committed dark look. */
+:root{
+  --night:#100e0c; --night-2:#1a1714; --rule:#3a332c;
+  --cream:#efe7d6; --cream-dim:#b9ae9b; --brick:#c7754b; --gold:#d2ad4c;
+  --display:"Bodoni Moda", "Didot", Georgia, serif;
+  --body:"Source Sans 3", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono:"IBM Plex Mono", ui-monospace, Menlo, monospace;
+  color-scheme: dark;
+}
+*{box-sizing:border-box}
+body{background:var(--night);color:var(--cream);font-family:var(--body);font-size:17px;line-height:1.6}
+a{color:var(--gold)}
+a:focus-visible,button:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px))}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--cream-dim)}
+h2{font-family:var(--display);font-weight:500;font-size:clamp(28px,4vw,40px);line-height:1.15;margin:0;text-wrap:balance}
+h3{font-family:var(--display);font-weight:700;font-size:21px;margin:0}
+p{margin:0}
+section{padding-block:64px;border-top:1px solid var(--rule)}
+
+.hero{position:relative;background:var(--night)}
+.hero-img{display:block;width:100%;height:min(62vw,560px);object-fit:cover;object-position:center 55%}
+.hero-fade{position:absolute;inset:auto 0 0 0;height:60%;background:linear-gradient(to bottom, rgba(16,14,12,0), var(--night) 92%)}
+.hero-copy{position:relative;margin-top:-190px;display:flex;flex-direction:column;align-items:center;gap:14px;text-align:center;padding-block:0 40px}
+.hero-copy img{width:min(720px,100%);height:auto}
+.tag{font-family:var(--mono);font-size:13px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold)}
+.credit{font-size:14px;letter-spacing:.12em;text-transform:uppercase;color:var(--cream-dim)}
+.actions{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:10px}
+.btn{display:inline-flex;align-items:center;gap:8px;min-height:46px;padding:0 22px;border:1px solid var(--gold);color:var(--night);background:var(--gold);font-family:var(--body);font-weight:600;font-size:16px;text-decoration:none;border-radius:2px;cursor:pointer}
+.btn.ghost{background:transparent;color:var(--gold)}
+.btn[aria-disabled="true"]{opacity:.55;cursor:default}
+
+.logline{font-family:var(--display);font-style:italic;font-size:clamp(22px,3vw,30px);line-height:1.35;text-align:center;max-width:860px;margin:0 auto;text-wrap:balance}
+
+.two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:48px;align-items:start}
+.stack{display:flex;flex-direction:column;gap:16px;min-width:0}
+.stills{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.stills figure{margin:0;display:flex;flex-direction:column;gap:6px}
+.stills img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block}
+.stills figcaption{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--cream-dim)}
+
+.teaser{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:40px;align-items:center}
+.poster{position:relative;display:block;border:1px solid var(--rule)}
+.poster img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover}
+.poster .len{position:absolute;right:10px;bottom:10px;font-family:var(--mono);font-size:12px;background:rgba(16,14,12,.8);padding:3px 8px}
+
+ul.facts{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px}
+ul.facts li{display:grid;grid-template-columns:120px minmax(0,1fr);gap:16px;border-bottom:1px solid var(--rule);padding-bottom:10px}
+ul.facts .k{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--cream-dim);padding-top:3px}
+
+.tiers{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.tier{display:flex;flex-direction:column;gap:10px;padding:20px;background:var(--night-2);border:1px solid var(--rule);text-align:left;color:var(--cream);font:inherit;cursor:pointer;border-radius:2px}
+.tier[aria-pressed="true"]{border-color:var(--gold);box-shadow:inset 0 3px 0 var(--gold)}
+.tier .name{font-family:var(--display);font-size:22px;font-weight:700}
+.tier .levers{font-size:14px;color:var(--cream-dim);line-height:1.45;min-height:62px}
+.tier .total{font-family:var(--mono);font-size:26px;font-variant-numeric:tabular-nums;color:var(--cream)}
+.tier .net{font-family:var(--mono);font-size:13px;color:var(--gold);font-variant-numeric:tabular-nums}
+.sheet{overflow-x:auto;margin-top:22px;border:1px solid var(--rule)}
+table{width:100%;border-collapse:collapse;font-size:14px;min-width:520px}
+th,td{padding:7px 12px;border-bottom:1px solid var(--rule);text-align:left}
+td.num,th.num{text-align:right;font-family:var(--mono);font-variant-numeric:tabular-nums}
+td.acct{font-family:var(--mono);color:var(--cream-dim);width:70px}
+tr.sub td{background:var(--night-2);font-weight:600}
+tr.grand td{background:var(--gold);color:var(--night);font-weight:700}
+tr.credit td{color:var(--gold)}
+.assume{margin-top:18px;border-top:1px solid var(--rule);padding-top:14px}
+.assume summary{cursor:pointer;font-weight:600;color:var(--gold);min-height:44px;display:flex;align-items:center}
+.notes{margin-top:18px;font-size:14px;color:var(--cream-dim);display:flex;flex-direction:column;gap:6px;max-width:820px}
+
+.people{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:36px}
+.contact{display:flex;flex-wrap:wrap;align-items:center;gap:24px 40px;justify-content:space-between}
+.contact img{height:64px;width:auto}
+.mail{font-family:var(--mono);font-size:18px;user-select:all}
+.copy{font:inherit;font-size:14px;background:transparent;color:var(--gold);border:1px solid var(--rule);min-height:44px;padding:0 14px;cursor:pointer;border-radius:2px}
+footer{padding-block:28px 48px;font-size:13px;color:var(--cream-dim);border-top:1px solid var(--rule)}
+
+@media (max-width:760px){
+  .two,.teaser,.people{grid-template-columns:minmax(0,1fr);gap:28px}
+  .tiers{grid-template-columns:minmax(0,1fr)}
+  .tier .levers{min-height:0}
+  .hero-copy{margin-top:-90px}
+  section{padding-block:44px}
+  ul.facts li{grid-template-columns:minmax(0,1fr);gap:2px}
+}
+@media (prefers-reduced-motion:no-preference){ .tier{transition:border-color .2s} }
+</style>
+
+<header class="hero">
+  <img class="hero-img" src="hero.jpg" alt="The full company dances down Bleecker Street at night">
+  <div class="hero-fade"></div>
+  <div class="wrap hero-copy">
+    <img src="title.png" alt="The Gods and Ghosts of Bleecker Street">
+    <div class="tag">An original musical motion picture</div>
+    <div class="credit">Written by Tom MacLear · Producer and Musical Director Marc Jackson</div>
+    <div class="actions">
+      <a class="btn" id="watch" href="https://vimeo.com/1245651587/7a94992218" target="_blank" rel="noopener">▶ Watch the teaser (2:33)</a>
+      <a class="btn ghost" href="#budget">Budget scenarios</a>
+    </div>
+  </div>
+</header>
+
+<main>
+<section><div class="wrap">
+  <p class="logline">A self-destructing pop star runs from Hollywood to Greenwich Village to find out what happened to her father, a legendary protest poet who vanished in 1974, and finds the truth has been hiding in plain sight.</p>
+</div></section>
+
+<section><div class="wrap two">
+  <div class="stack">
+    <div class="eyebrow">The story</div>
+    <h2>A father who vanished. A daughter who can't stop running.</h2>
+    <p>1974. Tony, the voice of a protest generation, vanishes from a locked psychiatric ward. All they find is blood on an empty bed.</p>
+    <p>1995. His daughter Chelsea Moore is the world's best-selling bad-girl pop star, and she is coming apart. She runs to the Village her parents left behind.</p>
+    <p>His oldest friends are still there: Frankie, a Pulitzer-winning beat poet, and Johnny, a jazz legend who preaches in Harlem. They know why Tony disappeared, and what he saw in a Los Angeles hotel kitchen in June 1968. They aren't talking. The ghosts of Bleecker Street are.</p>
+  </div>
+  <div class="stills">
+    <figure><img src="s1.jpg" alt="Chelsea on an arena stage with her dancers"><figcaption>Hollywood, 1995</figcaption></figure>
+    <figure><img src="s2.jpg" alt="Tony reads poetry to a packed club, black and white"><figcaption>The Village, the sixties</figcaption></figure>
+    <figure><img src="s3.jpg" alt="Chelsea and Frankie talk late at night"><figcaption>The friends who know</figcaption></figure>
+    <figure><img src="s4.jpg" alt="Three old friends dance on chairs in a jazz club"><figcaption>The music never left</figcaption></figure>
+  </div>
+</div></section>
+
+<section id="teaser"><div class="wrap teaser">
+  <a class="poster" href="https://vimeo.com/1245651587/7a94992218" target="_blank" rel="noopener" aria-label="Watch the teaser">
+    <img src="teaser.jpg" alt="Chelsea plays electric guitar on a club stage">
+    <span class="len">2:33</span>
+  </a>
+  <div class="stack">
+    <div class="eyebrow">Proof of concept</div>
+    <h2>See the world before you read a page.</h2>
+    <p>A two-and-a-half-minute teaser built from the script: the Hollywood fall, the 1974 disappearance, the Village that kept his secret. The teaser was made with AI tools as a proof of concept. The film is shot with actors, dancers and musicians.</p>
+    <p><a href="https://vimeo.com/1245651587/7a94992218" target="_blank" rel="noopener">Open the teaser</a></p>
+  </div>
+</div></section>
+
+<section><div class="wrap two">
+  <div class="stack">
+    <div class="eyebrow">The music</div>
+    <h2>Thirty years of one family's songs.</h2>
+    <p>Folk, jazz, gospel, nineties pop and hip-hop, written into the story rather than laid over it. The soundtrack album is built in from day one.</p>
+  </div>
+  <ul class="facts">
+    <li><span class="k">Numbers</span><span>22 original musical numbers</span></li>
+    <li><span class="k">Eras</span><span>The 1960s Village, 1974, Hollywood and New York in 1995</span></li>
+    <li><span class="k">Featured</span><span>"All I Have to Give," newly produced for the pitch. Available to hear on request.</span></li>
+    <li><span class="k">Music lead</span><span>Marc Jackson, producer and musical director</span></li>
+  </ul>
+</div></section>
+
+<section id="budget"><div class="wrap stack">
+  <div class="eyebrow">Budget scenarios · producer's estimate, November 2026</div>
+  <h2>Three ways to make it. Two decisions move the number.</h2>
+  <p style="max-width:780px">Build the Village on a New York stage or shoot its streets, and cast a name for Frankie or not. Pick a scenario to see its top sheet.</p>
+  <div class="tiers" role="group" aria-label="Budget scenarios" id="tiers"></div>
+  <div class="sheet"><table aria-live="polite" id="sheet"></table></div>
+  <div class="notes">
+    <p>Priced at 2026 rates. Includes a full post schedule, a casting account, and the accounts a musical needs: choreography and dancers, music pre-records, and a real music budget.</p>
+    <p>The New York credit is estimated at the 30% base rate on qualified New York spend: 85% of production and post, plus 85% of director and cast wages, capped at 40% of other qualified costs. Every scenario shoots at least 10% of its days at a qualified New York production facility. Facility eligibility and program funding are unconfirmed, and the credit arrives after the shoot, not as upfront cash.</p>
+    <p>Facility rent and street-location access are planning allowances, not quotes. Financing fees are excluded. A line producer’s breakdown replaces these figures before any commitment.</p>
+  </div>
+  <details class="assume">
+    <summary>Assumptions and facility schedule</summary>
+    <div class="sheet"><table>
+      <thead><tr><th>Planning input</th><th class="num">Soundstage Production</th><th class="num">Street &amp; Soundstage</th><th class="num">Full Bleecker</th></tr></thead>
+      <tbody>
+      <tr><td>Principal photography</td><td class="num">30 facility / 0 street</td><td class="num">30 facility / 5 street</td><td class="num">4 facility / 36 street</td></tr>
+      <tr><td>Rental prep / hold / strike</td><td class="num">20 / 0 / 5 days</td><td class="num">20 / 5 / 5 days</td><td class="num">5 / 0 / 2 days</td></tr>
+      <tr><td>Total billed facility days</td><td class="num">55</td><td class="num">60</td><td class="num">11</td></tr>
+      <tr><td>Facility occupancy at $8,000/day</td><td class="num">$440,000</td><td class="num">$480,000</td><td class="num">$88,000</td></tr>
+      <tr><td>Location access at $10,000/street day</td><td class="num">$0</td><td class="num">$50,000</td><td class="num">$360,000</td></tr>
+      <tr><td>Shoot days at a qualified NY facility</td><td class="num">100%</td><td class="num">86%</td><td class="num">10%</td></tr>
+      </tbody></table></div>
+    <div class="notes">
+      <p>The $8,000 facility day covers occupancy, basic utilities and facility support; equipment, set building and crew labor stay in their own accounts. Prep, hold and strike are rental days, not photography days. The $10,000 street day is a property-access allowance; permits and street control stay in account 3600. No facility has been selected or quoted.</p>
+      <p>New York requires at least 10% of principal photography days at a qualified production facility, on a set built for the production, for budgets over $15M, and at least one full day for independent productions of $15M or less. A New York City facility used by a production over $15M must meet the state's Level 2 facility specs. Full Bleecker moves four of its 40 days onto a stage; it does not add days.</p>
+      <p>Insurance is 1.5% of above the line, production and post. Bond is 2% of subtotal. Contingency is 10% of production, post and other. No scoring credit, Production Plus or upstate uplift is assumed.</p>
+    </div>
+  </details>
+  <p><a href="budget.pdf" target="_blank" rel="noopener">Open the full top sheet (PDF, 2 pages)</a></p>
+</div></section>
+
+<section><div class="wrap people">
+  <div class="stack">
+    <div class="eyebrow">Producer and musical director</div>
+    <h3>Marc Jackson</h3>
+    <p>Twenty years putting music to picture. Director of Music at New Wave Entertainment, music supervising series for HBO, A&amp;E, MTV, Lifetime and The History Channel. Composer of the orchestral branding ident for Skydance's "Uncharted." Silver and Bronze Clio awards for the "Orange Is the New Black" season-finale campaign.</p>
+  </div>
+  <div class="stack">
+    <div class="eyebrow">Writer</div>
+    <h3>Tom MacLear</h3>
+    <p>The late Tom MacLear wrote the screenplay and its original songs.</p>
+    <div class="eyebrow" style="margin-top:12px">Where it stands</div>
+    <p>Screenplay complete. Teaser complete. Looking for a sales agent, financing and production partners.</p>
+  </div>
+</div></section>
+
+<section><div class="wrap contact">
+  <img src="logo.png" alt="MoonLab Productions">
+  <div class="stack" style="gap:6px">
+    <div class="eyebrow">Contact</div>
+    <div><span class="mail" id="mail">marc@moonlab.productions</span></div>
+    <div class="mail" style="font-size:16px;color:var(--cream-dim)">818-970-0029</div>
+  </div>
+  <button class="copy" id="copy" type="button">Copy email</button>
+</div></section>
+</main>
+
+<footer><div class="wrap">© 2026 MoonLab Productions. Confidential. Prepared for discussion at AFM 2026.</div></footer>
+
+<script>
+const DATA = {"A":{"ATL":[["1100","Story & Rights",150000],["1200","Producers",400000],["1300","Director & Staff",450000],["1400","Cast",1400000],["1450","Casting Director & Casting (incl. singer/dancer auditions)",110000],["1500","Travel & Living",120000],["1800","ATL Fringes (est.)",185000]],"atl_total":2815000,"BTLP":[["2000","Production Staff",292000],["2100","Extra Talent",393000],["2100A","NY location access fees (excludes facility rent)",0],["2100B","Qualified facility rent incl. prep / hold / strike",440000],["2200","Set Design & Construction",505000],["2500","Set Operations",106000],["2600","Special Effects",97000],["2700","Set Dressing",514000],["2800","Property",123000],["2900","Costumes (period, two eras)",206000],["3000","Picture Vehicles",10000],["3100","Make-up & Hair",123000],["3200","Lighting & Grip",362000],["3300","Camera",393000],["3400","Production Sound & Playback",139000],["3500","Transportation",53000],["3600","Location Expenses",61000],["3800","Second Unit",0],["4000","Tests",65000],["2950","Choreography, Dancers & Rehearsal",450000],["2960","Music Pre-records & Vocal Coaching",300000],["4200","BTL Production Fringes (est.)",384000]],"btlp":5016000,"POST":[["5000","Visual Effects (period clean-up, set extensions)",350000],["5100","Editorial (approx. 24-week post)",350000],["5200","Music (arrangements, score, recording, mix)",650000],["5300","Post Sound (music-forward mix)",250000],["5400","Post Lab, Color & Deliverables",150000],["5700","Post Fringes (est.)",126000]],"post":1876000,"OTHER":[["6500","Publicity & Marketing Materials",100000],["6700","Insurance (1.5% of direct, rounded)",146000],["6800","Legal & Accounting",250000]],"other":496000,"subtotal":10203000,"bond":204000,"cont":739000,"grand":11146000,"credit":2229000,"net":8917000,"days":"30 facility days"},"B":{"ATL":[["1100","Story & Rights",150000],["1200","Producers",650000],["1300","Director & Staff",800000],["1400","Cast",3800000],["1450","Casting Director & Casting (incl. singer/dancer auditions)",160000],["1500","Travel & Living",300000],["1800","ATL Fringes (est.)",330000]],"atl_total":6190000,"BTLP":[["2000","Production Staff",341000],["2100","Extra Talent",612000],["2100A","NY location access fees (excludes facility rent)",50000],["2100B","Qualified facility rent incl. prep / hold / strike",480000],["2200","Set Design & Construction",426000],["2500","Set Operations",124000],["2600","Special Effects",113000],["2700","Set Dressing",434000],["2800","Property",143000],["2900","Costumes (period, two eras)",229000],["3000","Picture Vehicles",21000],["3100","Make-up & Hair",144000],["3200","Lighting & Grip",422000],["3300","Camera",459000],["3400","Production Sound & Playback",163000],["3500","Transportation",116000],["3600","Location Expenses",134000],["3800","Second Unit",62000],["4000","Tests",97000],["2950","Choreography, Dancers & Rehearsal",700000],["2960","Music Pre-records & Vocal Coaching",400000],["4200","BTL Production Fringes (est.)",478000]],"btlp":6148000,"POST":[["5000","Visual Effects (period clean-up, set extensions)",500000],["5100","Editorial (approx. 24-week post)",450000],["5200","Music (arrangements, score, recording, mix)",850000],["5300","Post Sound (music-forward mix)",320000],["5400","Post Lab, Color & Deliverables",180000],["5700","Post Fringes (est.)",166000]],"post":2466000,"OTHER":[["6500","Publicity & Marketing Materials",150000],["6700","Insurance (1.5% of direct, rounded)",222000],["6800","Legal & Accounting",350000]],"other":722000,"subtotal":15526000,"bond":311000,"cont":934000,"grand":16771000,"credit":3075000,"net":13696000,"days":"30 facility + 5 NY street days"},"C":{"ATL":[["1100","Story & Rights",150000],["1200","Producers",950000],["1300","Director & Staff",1500000],["1400","Cast",11500000],["1450","Casting Director & Casting (incl. singer/dancer auditions)",260000],["1500","Travel & Living",650000],["1800","ATL Fringes (est.)",400000]],"atl_total":15410000,"BTLP":[["2000","Production Staff",390000],["2100","Extra Talent",874000],["2100A","NY location access fees (excludes facility rent)",360000],["2100B","Qualified facility rent incl. prep / hold / strike",88000],["2200","Set Design & Construction",316000],["2500","Set Operations",141000],["2600","Special Effects",129000],["2700","Set Dressing",321000],["2800","Property",163000],["2900","Costumes (period, two eras)",275000],["3000","Picture Vehicles",39000],["3100","Make-up & Hair",165000],["3200","Lighting & Grip",483000],["3300","Camera",524000],["3400","Production Sound & Playback",186000],["3500","Transportation",211000],["3600","Location Expenses",243000],["3800","Second Unit",104000],["4000","Tests",129000],["2950","Choreography, Dancers & Rehearsal",1000000],["2960","Music Pre-records & Vocal Coaching",550000],["4200","BTL Production Fringes (est.)",590000]],"btlp":7281000,"POST":[["5000","Visual Effects (period clean-up, set extensions)",750000],["5100","Editorial (approx. 24-week post)",600000],["5200","Music (arrangements, score, recording, mix)",1100000],["5300","Post Sound (music-forward mix)",420000],["5400","Post Lab, Color & Deliverables",220000],["5700","Post Fringes (est.)",222000]],"post":3312000,"OTHER":[["6500","Publicity & Marketing Materials",250000],["6700","Insurance (1.5% of direct, rounded)",390000],["6800","Legal & Accounting",450000]],"other":1090000,"subtotal":27093000,"bond":542000,"cont":1168000,"grand":28803000,"credit":3782000,"net":25021000,"days":"4 facility + 36 NY street days"}};
+const TIERS = {
+  A:{name:"Soundstage Production", levers:"30 facility days. The Village built on a New York soundstage. No star casting."},
+  B:{name:"Street & Soundstage", levers:"30 facility days plus 5 New York street days. A name for Frankie."},
+  C:{name:"Full Bleecker", levers:"36 New York street days plus 4 facility days. Name cast for the family."}
+};
+const fmt = n => "$" + Math.round(n).toLocaleString("en-US");
+const short = n => "$" + (n/1e6).toFixed(1) + "M";
+const tiersEl = document.getElementById("tiers"), sheet = document.getElementById("sheet");
+let current = "B";
+function rows(list){ return list.map(([a,n,v]) => `<tr><td class="acct">${a}</td><td>${n}</td><td class="num">${fmt(v)}</td></tr>`).join(""); }
+function sub(label,v,cls="sub"){ return `<tr class="${cls}"><td></td><td>${label}</td><td class="num">${fmt(v)}</td></tr>`; }
+function render(){
+  tiersEl.innerHTML = Object.keys(TIERS).map(k => {
+    const d = DATA[k], t = TIERS[k];
+    return `<button class="tier" type="button" data-k="${k}" aria-pressed="${k===current}">
+      <span class="name">${t.name}</span><span class="levers">${t.levers}</span>
+      <span class="total">${short(d.grand)}</span><span class="net">≈ ${short(d.net)} after est. NY credit</span></button>`;
+  }).join("");
+  const d = DATA[current];
+  sheet.innerHTML = `<thead><tr><th>Acct</th><th>${TIERS[current].name} · ${d.days}</th><th class="num">Estimate</th></tr></thead><tbody>`
+    + rows(d.ATL) + sub("Total above the line", d.atl_total)
+    + rows(d.BTLP) + sub("Total production", d.btlp)
+    + rows(d.POST) + sub("Total post production", d.post)
+    + rows(d.OTHER) + sub("Total other", d.other)
+    + sub("Subtotal", d.subtotal)
+    + `<tr><td></td><td>Completion bond (2%)</td><td class="num">${fmt(d.bond)}</td></tr>`
+    + `<tr><td></td><td>Contingency (10% of below the line)</td><td class="num">${fmt(d.cont)}</td></tr>`
+    + sub("Grand total", d.grand, "grand")
+    + `<tr class="credit"><td></td><td>Estimated NY film credit (conditional)</td><td class="num">−${fmt(d.credit)}</td></tr>`
+    + sub("Net cost after estimated credit", d.net) + `</tbody>`;
+  tiersEl.querySelectorAll(".tier").forEach(b => b.addEventListener("click", () => { current = b.dataset.k; render(); }));
+}
+render();
+document.getElementById("copy").addEventListener("click", e => {
+  const t = document.getElementById("mail").textContent;
+  navigator.clipboard.writeText(t).then(() => { e.target.textContent = "Copied"; }).catch(() => {
+    const r = document.createRange(); r.selectNodeContents(document.getElementById("mail"));
+    const s = getSelection(); s.removeAllRanges(); s.addRange(r); e.target.textContent = "Selected, press Copy";
+  });
+});
+</script>
+
+</body>
+</html>
