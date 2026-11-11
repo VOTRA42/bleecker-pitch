@@ -63,7 +63,7 @@ section{padding-block:64px;border-top:1px solid var(--rule)}
 
 .teaser{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:40px;align-items:center}
 .poster{position:relative;display:block;border:1px solid var(--rule)}
-.poster img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover}
+.poster img,.poster video{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;background:#000}
 .poster .len{position:absolute;right:10px;bottom:10px;font-family:var(--mono);font-size:12px;background:rgba(16,14,12,.8);padding:3px 8px}
 
 ul.facts{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px}
@@ -115,7 +115,7 @@ footer{padding-block:28px 48px;font-size:13px;color:var(--cream-dim);border-top:
     <div class="tag">An original musical motion picture</div>
     <div class="credit">Written by Tom MacLear · Producer and Musical Director Marc Jackson</div>
     <div class="actions">
-      <a class="btn" id="watch" href="https://vimeo.com/1245651587/7a94992218" target="_blank" rel="noopener">▶ Watch the teaser (2:33)</a>
+      <a class="btn" id="watch" href="#teaser">▶ Watch the teaser (2:33)</a>
       <a class="btn ghost" href="#budget">Budget scenarios</a>
     </div>
   </div>
@@ -143,15 +143,12 @@ footer{padding-block:28px 48px;font-size:13px;color:var(--cream-dim);border-top:
 </div></section>
 
 <section id="teaser"><div class="wrap teaser">
-  <a class="poster" href="https://vimeo.com/1245651587/7a94992218" target="_blank" rel="noopener" aria-label="Watch the teaser">
-    <img src="teaser.jpg" alt="Chelsea plays electric guitar on a club stage">
-    <span class="len">2:33</span>
-  </a>
+  <div class="poster"><video id="tvid" controls playsinline preload="metadata" poster="teaser.jpg" src="teaser.mp4" aria-label="The Gods and Ghosts of Bleecker Street teaser"></video></div>
   <div class="stack">
     <div class="eyebrow">Proof of concept</div>
     <h2>See the world before you read a page.</h2>
     <p>A two-and-a-half-minute teaser built from the script: the Hollywood fall, the 1974 disappearance, the Village that kept his secret. The teaser was made with AI tools as a proof of concept. The film is shot with actors, dancers and musicians.</p>
-    <p><a href="https://vimeo.com/1245651587/7a94992218" target="_blank" rel="noopener">Open the teaser</a></p>
+    <p><a href="teaser.mp4">Open the teaser full screen</a></p>
   </div>
 </div></section>
 
@@ -273,5 +270,6 @@ document.getElementById("copy").addEventListener("click", e => {
 });
 </script>
 
+<script>document.getElementById("watch").addEventListener("click",function(e){e.preventDefault();var v=document.getElementById("tvid");v.scrollIntoView({behavior:"smooth",block:"center"});v.muted=false;v.play().catch(function(){});});</script>
 </body>
 </html>
